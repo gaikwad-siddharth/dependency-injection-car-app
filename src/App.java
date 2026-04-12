@@ -6,7 +6,8 @@ public class App {
         Car car = new Car(new PetrolEngine());
         car.drive();
 
-        /* Setter Injection (alternative approach)
+         //Setter Injection (alternative approach)
+		 /*
            Car car = new Car();
            car.setEngine(new DieselEngine());
            car.drive();
