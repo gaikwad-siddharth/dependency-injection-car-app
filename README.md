@@ -45,11 +45,12 @@ src/
 ### Constructor Injection
 
 ```java
-Car car = new Car(new PetrolEngine());
-car.drive();
+ Car car = new Car(new PetrolEngine());
+ car.drive();
 
 ### Setter Injection
 
 '''java
-c.setterEngine(new DiselEngine());
-car.drive();
+ Car car = new Car();
+ car.setEngine(new DieselEngine());
+ car.drive();
