@@ -1,14 +1,15 @@
-
 public class App {
 
-	public static void main(String[] args) {
-		
-		Car c = new Car(new PetrolEngine());  //Using Constructor Injection
-		
-		c.setterEngine(new DiselEngine());    //Using Setters Injection
+    public static void main(String[] args) {
 
-		c.drive();
+        // Constructor Injection
+        Car car = new Car(new PetrolEngine());
+        car.drive();
 
-	}
-
+        /* Setter Injection (alternative approach)
+           Car car = new Car();
+           car.setEngine(new DieselEngine());
+           car.drive();
+		*/
+    }
 }
